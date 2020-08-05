@@ -9,8 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@color/colorAccent">
+    android:padding="10dp">
 
     <com.ramotion.foldingcell.FoldingCell
         android:id="@+id/folding_cell"
@@ -25,15 +24,23 @@
             android:background="@color/colorFadeWhite"
             android:visibility="gone">
             <TextView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
                 android:textColor="@android:color/black"
                 android:textSize="24dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="HELLO WORLD"
-                android:gravity="center"
+                android:text="ONE DAY WORKSHOP ON DEMO"
+                android:gravity="center|top"
                 android:textAlignment="center"
                 android:id="@+id/cell_content_Textview"
                 android:layout_width="match_parent"
                 android:layout_height="500dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_sub_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
         </FrameLayout>
 
         <FrameLayout
@@ -45,7 +52,7 @@
                 android:textColor="@android:color/black"
                 android:textSize="24dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="HELLO WORLD"
+                android:text="ONE DAY WORKSHOP ON DEMO"
                 android:gravity="center"
                 android:textAlignment="center"
                 android:layout_width="match_parent"

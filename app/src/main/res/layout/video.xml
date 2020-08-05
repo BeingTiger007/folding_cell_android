@@ -5,8 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".YoutubeVideos">
+    android:layout_height="wrap_content">
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:padding="8dp"
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:autoPlay="false"
+        app:showYouTubeButton="false"
+        app:showFullScreenButton="true" />
 
     <View
         android:background="@color/colorPrimaryDark"
@@ -14,10 +22,5 @@
         android:layout_marginEnd="8dp"
         android:layout_width="match_parent"
         android:layout_height="2dp"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/youtube_video_recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
 </LinearLayout>
